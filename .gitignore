@@ -25,6 +25,13 @@ dist/
 
 # JetBrains IDE
 .idea/
+**/.vs
+**.vs
+.vs
+
+**/Libraries
+**/bin
+**/obj
 
 # Unit test reports
 TEST*.xml
