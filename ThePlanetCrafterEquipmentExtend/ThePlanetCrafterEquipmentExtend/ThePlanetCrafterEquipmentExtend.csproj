@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ThePlanetCrafterEquipmentExtend</RootNamespace>
     <AssemblyName>ThePlanetCrafterEquipmentExtend</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,19 +33,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>Libraries\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>Libraries\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>Libraries\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Beautify.Universal.Runtime">
       <HintPath>Libraries\Beautify.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>Libraries\BepInEx.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\BepInEx.Preloader.dll</HintPath>
     </Reference>
     <Reference Include="com.mijugames.miju-tools">
       <HintPath>Libraries\com.mijugames.miju-tools.dll</HintPath>
@@ -58,14 +65,35 @@
     <Reference Include="GameOptions">
       <HintPath>Libraries\GameOptions.dll</HintPath>
     </Reference>
+    <Reference Include="HarmonyXInterop">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\HarmonyXInterop.dll</HintPath>
+    </Reference>
     <Reference Include="HSVPicker">
       <HintPath>Libraries\HSVPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Posix">
       <HintPath>Libraries\Mono.Posix.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Security">
       <HintPath>Libraries\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\BepInEx\core\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.OdinInspector.Attributes">
       <HintPath>Libraries\Sirenix.OdinInspector.Attributes.dll</HintPath>
@@ -81,6 +109,10 @@
     </Reference>
     <Reference Include="Sirenix.Utilities">
       <HintPath>Libraries\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamNetworkingSockets Transport for Netcode for GameObjects, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\SteamNetworkingSockets Transport for Netcode for GameObjects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -99,6 +131,18 @@
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Libraries\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Netcode.Components, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\Unity.Netcode.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Netcode.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\Unity.Netcode.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Networking.Transport, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\Unity.Networking.Transport.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>Libraries\Unity.Postprocessing.Runtime.dll</HintPath>
@@ -131,7 +175,7 @@
       <HintPath>Libraries\Unity.VisualEffectGraph.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>Libraries\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>Libraries\UnityEngine.AccessibilityModule.dll</HintPath>
@@ -164,7 +208,7 @@
       <HintPath>Libraries\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>Libraries\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
       <HintPath>Libraries\UnityEngine.CrashReportingModule.dll</HintPath>
@@ -263,7 +307,7 @@
       <HintPath>Libraries\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Libraries\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\The Planet Crafter\Planet Crafter_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
       <HintPath>Libraries\UnityEngine.UIElementsModule.dll</HintPath>
